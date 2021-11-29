@@ -13,10 +13,12 @@ class CreateSamplesTable extends Migration
      */
     public function up()
     {
-        Schema::create('samples', function (Blueprint $table) {
+        Schema::create('locations', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->morphs('model');
             $table->timestamps();
-            $table->string('word');
+            $table->float('longitude',15,12)->nullable();
+            $table->float('latitude',15,12)->nullable();
         });
     }
 
@@ -27,6 +29,6 @@ class CreateSamplesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('samples');
+        Schema::dropIfExists('locations');
     }
 }

@@ -1,13 +1,13 @@
 {
-    "name": "ryosuzaki/group-system-sample-package",
-    "description": "Laravel GroupSystem パッケージ開発 Sample",
+    "name": "ryosuzaki/group-system-location",
+    "description": "Laravel GroupSystem パッケージ開発 location",
     "require": {
         "php": "^7.2"
     },
     "autoload": {
-        "psr-4": {"GroupSystem\\Sample\\": "src/"}
+        "psr-4": {"GroupSystem\\Location\\": "src/"}
     },
-    "homepage": "https://github.com/ryosuzaki/group-system-sample-package",
+    "homepage": "https://github.com/ryosuzaki/group-system-location",
     "authors": [
         {
             "name": "ryosuzaki",
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "GroupSystem\\Sample\\SampleServiceProvider"
+                "GroupSystem\\Location\\LocationServiceProvider"
             ]
         }
     }
